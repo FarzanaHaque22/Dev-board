@@ -3,9 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Dev-board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body id="body" class="pt-5">
+    <header>
+        <nav class="flex flex-row gap-10 justify-between mt-6 mx-36  rounded-xl   bg-slate-200">
+            <div class="flex flex-row gap-2 justify-center items-center p-5 ">
+                <img src="C:\Users\farza\OneDrive\Documents\assets\logo.png" class="w-8 h-8">
+                <h3 class="font-semibold">Dev<span class="text-2xl font-bold">Board</span></h3>
+            </div>
+            <div class="flex flex-row gap-9 px-6 justify-center items-center ">
+                 <div class="flex flex-row gap-3 justify-center rounded-3xl p-3 bg-blue-100 m-5 ">
+                  <img src="C:\Users\farza\OneDrive\Documents\assets\checkbox.png" class="w-7">
+                  <p class="font-bold text-2xl">23</p>
+                 </div>
+            <div>
+                <img  id="image-color" src="C:\Users\farza\OneDrive\Documents\assets\theme-btn.png" class="w-14 p-2 bg-slate-100 rounded-full">
+            </div>
+            </div>
+
+        </nav>
+    </header>
+    <main class="pb-16">
+        <div class="flex flex-col rounded-2xl bg-slate-200 mx-36 mt-6 pb-8">
+        <div class="flex flex-row gap-5 border-b-4  border-dashed pb-5 mt-8 mx-36 justify-around border-gray-400 border-b ">
+            <div class="flex flex-row gap-4 p-4  justify-center items-center rounded-2xl bg-blue-100">
+                <img src="C:\Users\farza\OneDrive\Documents\assets\checkbox.png" class="w-10 h-12 p-2 bg-white rounded-full" >
+                <div class="flex flex-col">
+                   <h4 class="text-xl">Task Assigned</h4>
+                    <p class="font-bold text-xl">05</p>
+                </div>
+            
+            </div>
+            <div class="flex flex-row bg-cyan-400 gap-12 w-2/3 p-4 justify-center items-center rounded-2xl ">
+                <img src="C:\Users\farza\OneDrive\Documents\assets\board.png" >
+                <h4 class="font-semibold text-white">Discover Something <br> New Today!</h4>
+            </div>
+            <div class="flex flex-row gap-5 rounded-2xl p-4  justify-center items-center bg-blue-100">
+                <img src="C:\Users\farza\OneDrive\Documents\assets\calender.png" class=" p-2 bg-white rounded-full">
+                <div class="flex flex-col">
+                <p id="currentWeek"></p>
+                <p id="currentDate"></p>
+            </div>
+            </div>
+        </div>
     
+        <div class="grid grid-cols-3 gap-5 mx-36 mt-6">
+            <div class="flex flex-col bg-slate-100 rounded-3xl p-5">
+            <div class=" flex flex-col border-dashed pb-3 border-b-4">
+            <div class="pb-2">
+                <button class="btn btn-active btn-primary bg-blue-100 font-semibold  p-5" >ShopEase</button>
+            </div>
+            <h4 class="font-bold pb-3">Fix Mobile Button Issue </h4>
+            <div class="bg-blue-100 rounded-2xl p-2 text-gray-500"><p >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p></div> 
+            </div>
+            <div class="flex flex-row justify-between pt-4">
+                <div>
+                    <h5 class="text-gray-500">Deadline</h5>
+                    <h4 class="font-semibold">21 March,2025</h4>
+                </div>
+                <button class="btn btn-active btn-primary bg-blue-500 text-white p-3">Completed</button>
+            </div>
+            </div>
+
+            <div class="flex flex-col bg-slate-100 rounded-3xl p-5">
+                <div class=" flex flex-col border-dashed pb-3 border-b-4">
+                <div class="pb-2">
+                    <button class="btn btn-active btn-primary bg-blue-100 font-semibold   p-5">CloudSync</button>
+                </div>
+                <h4 class="font-bold pb-3">Add Dark Mode </h4>
+                <div class="bg-blue-100 rounded-2xl p-2 text-gray-500"><p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
+                </div>
+                <div class="flex flex-row justify-between pt-4">
+                    <div>
+                        <h5 class="text-gray-500">Deadline</h5>
+                        <h4 class="font-semibold">21 March,2025</h4>
+                    </div>
+                    <button class="btn btn-active btn-primary bg-blue-500 text-white p-3">Completed</button>
+                </div>
+                </div>
+
+                <div class="flex flex-col bg-slate-100 rounded-3xl p-5">
+                    <div class=" flex flex-col border-dashed pb-3 border-b-4">
+                    <div class="pb-2">
+                        <button class="btn btn-active btn-primary bg-blue-100 font-semibold   p-5">SwiftPay</button>
+                    </div>
+                    <h4 class="font-bold pb-3">Optimize  Home page </h4>
+                    <div class="bg-blue-100 rounded-2xl p-2 text-gray-500"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p></div>
+                    </div>
+                    <div class="flex flex-row justify-between pt-4">
+                        <div>
+                            <h5 class="text-gray-500">Deadline</h5>
+                            <h4 class="font-semibold">21 March,2025</h4>
+                        </div>
+                        <button class="btn btn-active btn-primary bg-blue-500 text-white p-3">Completed</button>
+                    </div>
+                    </div>
+
+                    <div class="flex flex-col bg-slate-100 rounded-3xl p-5">
+                        <div class=" flex flex-col border-dashed pb-3 border-b-4">
+                        <div class="pb-2">
+                            <button class="btn btn-active btn-primary bg-blue-100 font-semibold  p-5">Meta</button>
+                        </div>
+                        <h4 class="font-bold pb-3">Add new emoji 🤲 </h4>
+                        <div class="bg-blue-100 rounded-2xl p-2 text-gray-500"> <p >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p></div> 
+                        </div>
+                        <div class="flex flex-row justify-between pt-4">
+                            <div>
+                                <h5 class="text-gray-500">Deadline</h5>
+                                <h4 class="font-semibold">21 March,2025</h4>
+                            </div>
+                            <button class="btn btn-active btn-primary bg-blue-500 text-white p-3">Completed</button>
+                        </div>
+                        </div>
+
+
+                        <div class="flex flex-col bg-slate-100 rounded-3xl p-5">
+                            <div class=" flex flex-col border-dashed pb-3 border-b-4">
+                            <div class="pb-2">
+                                <button class="btn btn-active btn-primary bg-blue-100 font-semibold   p-5">Google LLC</button>
+                            </div>
+                            <h4 class="font-bold pb-3 ">Integrate OpenAI API </h4>
+                            <div class="bg-blue-100 rounded-2xl p-2 text-gray-500"> <p >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly </p></div>
+                            </div>
+                            <div class="flex flex-row justify-between pt-4">
+                                <div>
+                                    <h5 class="text-gray-500">Deadline</h5>
+                                    <h4 class="font-semibold">21 March,2025</h4>
+                                </div>
+                                <button class="btn btn-active btn-primary bg-blue-500 text-white p-3">Completed</button>
+                            </div>
+                            </div>
+
+
+                            <div class="flex flex-col bg-slate-100 rounded-3xl p-5">
+                                <div class=" flex flex-col border-dashed  pb-3 border-b-4">
+                                <div class="pb-2">
+                                    <button class="btn btn-active btn-primary bg-blue-100 font-semibold  p-5">Glassdoor</button>
+                                </div>
+                                <h4 class="font-bold pb-3 ">Improve Job Searching </h4>
+                               <div class="bg-blue-100 rounded-2xl  p-2 text-gray-500"><p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p></div>
+                                </div>
+                                <div class="flex flex-row justify-between pt-4">
+                                    <div>
+                                        <h5 class="text-gray-500">Deadline</h5>
+                                        <h4 class="font-semibold">21 March,2025</h4>
+                                    </div>
+                                    <button class="btn btn-active btn-primary bg-blue-500 text-white p-3">Completed</button>
+                                </div>
+                                </div>
+        </div>
+        </div>
+
+
+
+    </main>
+    <script src="./dev.js/function.js"></script>
 </body>
 </html>
