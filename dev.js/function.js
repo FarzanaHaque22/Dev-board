@@ -74,6 +74,10 @@ document.getElementById("discover-btn").addEventListener("click",function(){
     const increaseTask =document.getElementById("total-task");
     let taskRemain = parseInt (increaseTask.innerText, 10);
     increaseTask.innerText = taskRemain + 1;
+    const activity =document.getElementById("task-update");
+    const taskName = document.getElementById("task-title").innerText;
+    const realTime = new Date().toLocaleDateString();
+    activity.innerText =`You have Complete The Task "${taskName}" at "${realTime}`;
  })
  document.getElementById("taskButton2").addEventListener("click",function(event){
     const buttonThree = event.target;
@@ -90,6 +94,10 @@ document.getElementById("discover-btn").addEventListener("click",function(){
     const increaseTask =document.getElementById("total-task");
     let taskRemain = parseInt (increaseTask.innerText, 10);
     increaseTask.innerText = taskRemain + 1;
+    const activity =document.getElementById("task-update");
+    const taskName = document.getElementById("task-title").innerText;
+    const realTime = new Date().toLocaleDateString();
+    activity.innerText =`You have Complete The Task "${taskName}" at "${realTime}`;
  })
  document.getElementById("taskButton3").addEventListener("click",function(event){
     const buttonFour = event.target;
@@ -106,6 +114,10 @@ document.getElementById("discover-btn").addEventListener("click",function(){
     const increaseTask =document.getElementById("total-task");
     let taskRemain = parseInt (increaseTask.innerText, 10);
     increaseTask.innerText = taskRemain + 1;
+    const activity =document.getElementById("task-update");
+    const taskName = document.getElementById("task-title").innerText;
+    const realTime = new Date().toLocaleDateString();
+    activity.innerText =`You have Complete The Task "${taskName}" at "${realTime}`;
  })
  
  document.getElementById("taskButton4").addEventListener("click",function(event){
@@ -123,6 +135,10 @@ document.getElementById("discover-btn").addEventListener("click",function(){
     const increaseTask =document.getElementById("total-task");
     let taskRemain = parseInt (increaseTask.innerText, 10);
     increaseTask.innerText = taskRemain + 1;
+    const activity =document.getElementById("task-update");
+    const taskName = document.getElementById("task-title").innerText;
+    const realTime = new Date().toLocaleDateString();
+    activity.innerText =`You have Complete The Task "${taskName}" at "${realTime}`;
  
  })
  document.getElementById("taskButton5").addEventListener("click",function(event){
@@ -140,6 +156,10 @@ document.getElementById("discover-btn").addEventListener("click",function(){
     const increaseTask =document.getElementById("total-task");
     let taskRemain = parseInt (increaseTask.innerText, 10);
     increaseTask.innerText = taskRemain + 1;
+    const activity =document.getElementById("task-update");
+    const taskName = document.getElementById("task-title").innerText;
+    const realTime = new Date().toLocaleDateString();
+    activity.innerText =`You have Complete The Task "${taskName}" at "${realTime}`;
  
  })
 
