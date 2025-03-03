@@ -26,6 +26,14 @@ function getColor() {
     return color;
 }
 
+document.getElementById("discover-btn").addEventListener("click",function(){
+    window.location.href = "dev2.html";
+});
+
+document.getElementById("back-btn").addEventListener("click",function(){
+    window.location.href = "dev.html";
+});
+
 
 function getTask(event) {
     const button = event.target;
