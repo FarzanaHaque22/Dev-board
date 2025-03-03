@@ -30,22 +30,11 @@ document.getElementById("discover-btn").addEventListener("click",function(){
     window.location.href = "dev2.html";
 });
 
-document.getElementById("back-btn").addEventListener("click",function(){
-    window.location.href = "dev.html";
-});
 
 
-function getTask(event) {
-    const button = event.target;
-    button.disabled = true;
-    const deductTask = document.getElementById("task-number");
-    let taskCompleted = parseInt(deductTask.innerText, 6);
-    deductTask.innerText = taskCompleted - 1;
 
-    const increaseTask =document.getElementById("total-task");
-    let taskRemain = pars (increaseTask.innerText, 23);
-    increaseTask.innerText = taskRemain + 1;
-}
+
+
  document.getElementById("taskButton").addEventListener("click",function(event){
     const buttonOne = event.target;
     alert("Task completed successfully!");
@@ -53,6 +42,21 @@ function getTask(event) {
     buttonOne.style.backgroundColor = "gray";
     buttonOne.style.cursor = "not-allowed";
     buttonOne.style.text = "white";
+
+
+    const deductTask = document.getElementById("task-number");
+    let taskCompleted = parseInt(deductTask.innerText, 10);
+    deductTask.innerText = taskCompleted - 1;
+
+    const increaseTask =document.getElementById("total-task");
+    let taskRemain = parseInt (increaseTask.innerText, 10);
+    increaseTask.innerText = taskRemain + 1;
+
+
+    const activity =document.getElementById("task-update");
+    const taskName = document.getElementById("task-title").innerText;
+    const realTime = new Date().toLocaleDateString();
+    activity.innerText =`You have Complete The Task "${taskName}" at "${realTime}`;
  })
 
  document.getElementById("taskButton1").addEventListener("click",function(event){
@@ -62,6 +66,14 @@ function getTask(event) {
     buttonTwo.style.backgroundColor = "gray";
     buttonTwo.style.cursor = "not-allowed";
     buttonTwo.style.text = "white";
+
+    const deductTask = document.getElementById("task-number");
+    let taskCompleted = parseInt(deductTask.innerText, 10);
+    deductTask.innerText = taskCompleted - 1;
+
+    const increaseTask =document.getElementById("total-task");
+    let taskRemain = parseInt (increaseTask.innerText, 10);
+    increaseTask.innerText = taskRemain + 1;
  })
  document.getElementById("taskButton2").addEventListener("click",function(event){
     const buttonThree = event.target;
@@ -70,6 +82,14 @@ function getTask(event) {
     buttonThree.style.backgroundColor = "gray";
     buttonThree.style.cursor = "not-allowed";
     buttonThree.style.text = "white";
+
+    const deductTask = document.getElementById("task-number");
+    let taskCompleted = parseInt(deductTask.innerText, 10);
+    deductTask.innerText = taskCompleted - 1;
+
+    const increaseTask =document.getElementById("total-task");
+    let taskRemain = parseInt (increaseTask.innerText, 10);
+    increaseTask.innerText = taskRemain + 1;
  })
  document.getElementById("taskButton3").addEventListener("click",function(event){
     const buttonFour = event.target;
@@ -78,6 +98,14 @@ function getTask(event) {
     buttonFour.style.backgroundColor = "gray";
     buttonFour.style.cursor = "not-allowed";
     buttonFour.style.text = "white";
+
+    const deductTask = document.getElementById("task-number");
+    let taskCompleted = parseInt(deductTask.innerText, 10);
+    deductTask.innerText = taskCompleted - 1;
+
+    const increaseTask =document.getElementById("total-task");
+    let taskRemain = parseInt (increaseTask.innerText, 10);
+    increaseTask.innerText = taskRemain + 1;
  })
  
  document.getElementById("taskButton4").addEventListener("click",function(event){
@@ -87,6 +115,14 @@ function getTask(event) {
     buttonFive.style.backgroundColor = "gray";
     buttonFive.style.cursor = "not-allowed";
     buttonFive.style.text = "white";
+
+    const deductTask = document.getElementById("task-number");
+    let taskCompleted = parseInt(deductTask.innerText, 10);
+    deductTask.innerText = taskCompleted - 1;
+
+    const increaseTask =document.getElementById("total-task");
+    let taskRemain = parseInt (increaseTask.innerText, 10);
+    increaseTask.innerText = taskRemain + 1;
  
  })
  document.getElementById("taskButton5").addEventListener("click",function(event){
@@ -96,6 +132,14 @@ function getTask(event) {
     buttonSix.style.backgroundColor = "gray";
     buttonSix.style.cursor = "not-allowed";
     buttonSix.style.text = "white";
+
+    const deductTask = document.getElementById("task-number");
+    let taskCompleted = parseInt(deductTask.innerText, 10);
+    deductTask.innerText = taskCompleted - 1;
+
+    const increaseTask =document.getElementById("total-task");
+    let taskRemain = parseInt (increaseTask.innerText, 10);
+    increaseTask.innerText = taskRemain + 1;
  
  })
 

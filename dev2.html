@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     <title>Second page</title>
 </head>
-<body>
-    <header>
-        <nav>
-        <div class="flex flex-row justify-between">
+<body >
+    <header class="mx-30">
+        <div class="navbar flex flex-row justify-between rounded-2xl  shadow-sm bg-slate-200 px-10 my-8  ">
             <div class="flex flex-row gap-2 justify-center items-center p-5 ">
                 <img src="C:\Users\farza\OneDrive\Documents\assets\logo.png" class="w-8 h-8">
                 <h3 class="font-semibold">Dev<span class="text-2xl font-bold">Board</span></h3>
             </div>
-            <div>
-                <button class="bg-blue-600 rounded-2xl p-4">Back to Desk</button>
-              </div>
+    
+            <div class="navbar-end" >
+              <button id="second-button" class=" bg-indigo-600 text-white rounded-xl  p-4" >Back to Desk</button>
+            </div>
           </div>
-        </nav>
     </header>
     <main>
-        <h3>Blogs</h3>
-        <div>
-            <div>
+        <h3 class="font-bold  text-center text-2xl pb-8">Blogs</h3>
+
+        <div class="flex flex-col gap-6 mx-30 mb-10">
+
+        <div class="flex flex-col gap-3 rounded-2xl  bg-slate-100 p-6 ">
+            <div class="border-b-4 border-dashed p-3 mb-3">
                 <p>Question-1: What are the different ways to select an element in the DOM?</p>
             </div>
-            <p></p>
+           <div class="p-3 "><p>Selecting elements in the DOM (Document Object Model) is a fundamental task in web development: getElementById, getElementsByClass,getElementsByTagName,querySelector,querySelectorAll,getElementsByName</p></div>
         </div>
 
-        <div>
-            <div>
+        <div class="flex flex-col gap-3 rounded-2xl   bg-slate-100 p-6 ">
+            <div  class="border-b-4 border-dashed p-3 mb-3">
                 <p>Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
             </div>
-            <p></p>
+            <div class="p-3 "></div> <p> When you use the innerHTML property, it reads both the HTML markup and the text content of the element.This property focuses on the rendered text content. When you use innerText to read the content of an element, it returns the text as it appears on screen.The textContent property also ignores all HTML tags and returns only the text.</p>
         </div>
 
-        <div>
-            <div>
+        <div class="flex flex-col gap-3 rounded-2xl   bg-slate-100 p-6 ">
+            <div  class="border-b-4 border-dashed p-3 mb-3">
                 <p>Question-3: What is event delegation in the DOM?</p>
             </div>
-            <p></p>
+            <div class="p-3 "><p>Event delegation is a powerful technique in JavaScript that allows you to manage events efficiently, especially when dealing with a large number of elements.</p></div>
         </div>
 
-        <div>
-            <div>
+        <div class="flex flex-col gap-3 rounded-2xl   bg-slate-100 p-6">
+            <div  class="border-b-4 border-dashed p-3 mb-3">
                 <p>Question-4: What is event bubbling in the DOM?</p>
             </div>
-            <p></p>
+            <div class="p-3 "><p>Event bubbling is a method of event propagation in the HTML DOM API. It is a process that starts with the element that triggered the event and then bubbles up to the containing elements in the hierarchy</p></div>
         </div>
 
-        <div>
-            <div>
+        <div class="flex flex-col gap-3 rounded-2xl   bg-slate-100 p-6 ">
+            <div  class="border-b-4 border-dashed p-3 mb-3">
                 <p>Question-5: How do you create, add, and remove elements using JavaScript?</p>
             </div>
-            <p></p>
+            <div class="p-3 "> <p>To remove an element, you can use the removeChild method or the remove method.To add an element to the DOM, you can use the appendChild or insertBefore methods.</p></div>
         </div>
+
+    </div>    
     </main>
+    <script src="./dev.js/next-function.js"></script>
     
 </body>
 </html>
